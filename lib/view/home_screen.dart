@@ -4,6 +4,7 @@ import 'package:weblog/const_colors.dart';
 import 'package:weblog/const_strings.dart';
 import 'package:weblog/gen/assets.gen.dart';
 import 'package:weblog/models/fake_data.dart';
+import 'package:weblog/my_component.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({
@@ -300,40 +301,14 @@ class HomePageTagList extends StatelessWidget {
             return Padding(
               padding: EdgeInsets.fromLTRB(
                   0, 0, index == 0 ? bodyMargin : 8, 0),
-              child: Container(
-                height: 50,
-                decoration: const BoxDecoration(
-                    borderRadius:
-                        BorderRadius.all(Radius.circular(20)),
-                    // borderRadius: BorderRadius.circular(20),
-                    gradient: LinearGradient(
-                      colors: ConstGradiantColors.tags,
-                      begin: Alignment.centerRight,
-                      end: Alignment.centerLeft,
-                    )),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 3, 8, 3),
-                  child: Row(
-                    children: [
-                      ImageIcon(
-                        Assets.icons.hashtag.provider(),
-                        color: Colors.white,
-                        size: 14,
-                      ),
-                      const SizedBox(width: 6),
-                      Text(
-                        tagList[index].title,
-                        style: textTheme.labelSmall,
-                      )
-                    ],
-                  ),
-                ),
-              ),
+              child: MainTagsUi(textTheme: textTheme, index: index,),
             );
           }),
     );
   }
 }
+
+
 
 class HomePagePoster extends StatelessWidget {
   const HomePagePoster({

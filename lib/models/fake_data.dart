@@ -21,6 +21,9 @@ List<HashtagModels> tagList = [
   HashtagModels(title: "سی‌شارپ"),
 ];
 
+
+List<HashtagModels> selectedTagList = [];
+
 List<BlogModel> blogList = [
   BlogModel(
     id: 1, 

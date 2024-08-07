@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:weblog/const_colors.dart';
-import 'package:weblog/const_strings.dart';
+// import 'package:weblog/const_strings.dart';
 import 'package:weblog/gen/assets.gen.dart';
-import 'package:weblog/models/fake_data.dart';
-import 'package:weblog/my_divider.dart';
+// import 'package:weblog/models/fake_data.dart';
+import 'package:weblog/my_component.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({
