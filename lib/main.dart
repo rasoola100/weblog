@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:weblog/const_colors.dart';
+import 'package:weblog/view/main_screen.dart';
 import 'package:weblog/view/register_intro.dart';
 import 'package:weblog/view/splash_screen.dart';
 import 'package:flutter/services.dart';
@@ -92,7 +93,7 @@ class Blog extends StatelessWidget {
       ),
 
       // home: const SplashScreen(),
-      home: const RegisterIntro(),
+      home: const HomePage(),
     );
   }
 }
